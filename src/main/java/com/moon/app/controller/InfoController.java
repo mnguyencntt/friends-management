@@ -27,7 +27,7 @@ public class InfoController {
   @Autowired
   private AccountService accountService;
 
-  @RequestMapping(value = "/createOne", method = RequestMethod.GET)
+  @RequestMapping(value = "/createAccount", method = RequestMethod.GET)
   public ResponseJSON createOne(String email) {
     try {
       if (!CommonUtil.validate(email)) {
@@ -53,7 +53,7 @@ public class InfoController {
     return new ResponseJSON(TRUE, "Get All Relationships", accountService.getAllRelationships());
   }
 
-  @RequestMapping(value = "/updateEmail", method = RequestMethod.POST)
+  @RequestMapping(value = "/updateOldEmailToNewEmail", method = RequestMethod.POST)
   public ResponseJSON updateEmail(@RequestBody TargetRequest request) {
     try {
       AccountResponse account = accountService.updateByEmail(request.getRequestor(), request.getTarget());
