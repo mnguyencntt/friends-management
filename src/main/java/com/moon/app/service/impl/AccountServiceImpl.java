@@ -41,7 +41,7 @@ public class AccountServiceImpl implements AccountService {
       account.setEmail(newEmail);
       account.setName(newEmail.split("@")[0]);
       account = accountRepository.save(account);
-      logger.info("Created: " + account);
+      logger.info(String.format("Created Successful: %s - %s", account.getId(), account.getEmail()));
       return AccountResponse.convert(account);
     } catch (DataIntegrityViolationException e) {
       throw new TechnicalException("This email already created: " + newEmail);
