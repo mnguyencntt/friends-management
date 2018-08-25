@@ -6,7 +6,7 @@
 	<artifactId>friends-management</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>moon-park</name>
+	<name>friends-management</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
