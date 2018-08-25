@@ -11,7 +11,7 @@
 
 <body>
 	<div align="center">
-		<h1>Welcome moon-park!</h1>
+		<h1>Welcome my app!</h1>
 		<h2>
 			Hello "<b><c:out value="${pageContext.request.remoteUser}"></c:out></b>"
 		</h2>
