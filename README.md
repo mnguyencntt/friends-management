@@ -33,8 +33,11 @@ NA
 
 ## Contributors
 Developer: Nguyen Van Minh
+
 Email: m.nguyencntt@gmail.com
+
 Skype: m.nguyencntt
+
 Phone: (+65)9376-7011
 
 ## License
